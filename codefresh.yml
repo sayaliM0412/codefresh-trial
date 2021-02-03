@@ -16,7 +16,7 @@ steps:
     stage: build
     type: build
     image_name: codefresh
-    working_directory: build_my_image
+    # working_directory: build_my_image
     tag: master
     dockerfile: Dockerfile
     registry: ECR
