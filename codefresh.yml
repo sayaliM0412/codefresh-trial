@@ -16,9 +16,9 @@ steps:
     stage: build
     type: build
     image_name: codefresh
-    working_directory: ./
+    working_directory: build_my_image
     tag: master
-    dockerfile: ./Dockerfile
+    dockerfile: Dockerfile
     registry: ECR
   test_my_image:
      title: Running unit tests
