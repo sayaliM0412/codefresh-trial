@@ -15,7 +15,7 @@ steps:
     title: Building Docker Image
     stage: build
     type: build
-    image_name: my-python-image
+    image_name: codefresh-trial
     working_directory: ./
     tag: master
     dockerfile: ./Dockerfile
