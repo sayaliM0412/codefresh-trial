@@ -15,7 +15,7 @@ steps:
     title: Building Docker Image
     stage: build
     type: build
-    image_name: codefresh-trial
+    image_name: codefresh
     working_directory: ./
     tag: master
     dockerfile: ./Dockerfile
