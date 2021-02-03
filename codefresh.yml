@@ -18,7 +18,7 @@ steps:
     image_name: my-python-image
     working_directory: ./
     tag: master
-    dockerfile: Dockerfile
+    dockerfile: ./Dockerfile
     registry: ECR
   test_my_image:
      title: Running unit tests
