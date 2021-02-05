@@ -1,0 +1,7 @@
+service_account: azure-devops-admin
+
+image_repo: docker.magicmemories.com/azurepipeline-python
+
+image_pull_secret: docker-mm-nexus
+
+always_pull_images: true

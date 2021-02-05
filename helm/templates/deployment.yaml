@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azurepipeline-python
+  labels:
+    app: azurepipeline-python
+spec:
+  selector:
+    matchLabels:
+      app: azurepipeline-python
+  template:
+    metadata:
+      labels:
+        app: azurepipeline-python
+    spec:
+      serviceAccountName: azure-devops-admin
+      imagePullSecrets:
+        - name: docker-mm-nexus
+      containers:
+        - name: azurepipeline-python
+          image: {{ printf "%s:%s" .Values.image_repo .Values.image_tag }} 
